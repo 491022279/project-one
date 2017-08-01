@@ -1,0 +1,245 @@
+/*
+* @Author: Administrator
+* @Date:   2017-04-09 18:02:54
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-17 18:21:21
+*/
+*{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: "Roboto", arial, sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    color: #868f90;
+}
+.header0{
+	padding: 0 20px 10px;
+	overflow: hidden;
+}
+.clean{
+	padding: 30px 25px;
+	line-height: 20px;
+    height: 80px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 0px;
+    display: block;
+    float: left;
+    background: #e32929;
+    color: #fff;
+}
+.right{
+	float: right;
+}
+.right>li{
+	float: left;
+}
+.right .right1 a{
+	font-size: 16px;
+	line-height: 80px;
+	padding: 0 15px;
+	color: #e32929;
+	font-weight: 400;
+}
+.right .right2 a,.right .right3 a{
+    font-size: 16px;
+	line-height: 80px;
+	padding: 0 15px;
+	color: #ccc;
+	font-weight: 400;
+}
+.title0{
+	padding: 100px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+.title0 h1{
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 20px;
+}
+.title0 p{
+	margin-bottom: 15px;
+	font-size: 15px;
+    line-height: 26px;
+    color: #868f90;
+}
+.content0{
+    background-color: #fff;
+    overflow: hidden;
+}
+.content0 .ct{
+    overflow: hidden;
+}
+.content0 .pic1{
+	background: url('../img/work_1.jpg') center center no-repeat;
+	background-size: cover;
+	float: left;
+}
+.content0 .word{
+	float: left;
+}
+.content0 .word h2{
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+}
+.content0 .word p{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	font-size: 20px;
+	line-height: 36px;
+}
+.content0 .word a{
+	display: inline-block;
+	background: #e32929;
+    border: 2px solid #e32929;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 4px 18px;
+    margin-right: 10px;
+}
+.content0 .pic2{
+	background: url('../img/work_2.jpg') center center no-repeat;
+	background-size: cover;
+	float: left;
+}
+.content0 .pic3{
+	background: url('../img/work_3.jpg') center center no-repeat;
+	background-size: cover;
+	float: left;
+}
+.content0 .pic4{
+	background: url('../img/work_4.jpg') center center no-repeat;
+	background-size: cover;
+	float: left;
+}
+
+.leader0 h2{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+.rens{
+	overflow: hidden;
+}
+.rens>div{
+	padding: 0 25px;
+	margin-bottom: 20px;
+	float: left;
+}
+.rens img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+.rens h3{
+	font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    position: relative;
+}
+.rens h3:after{
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #e32929;
+}
+.rens p{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.rens .icon li{
+	float: left;
+	width: 30px;
+	height: 27px;
+}
+.rens .icon li>a{
+	display: block;
+	margin-right: 10px;
+}
+.rens .icon a:hover .iconfont{
+	color: #000;
+}
+.feature{
+	background-color: #fafafa;
+}
+.feature0{
+	overflow: hidden;
+}
+.feature0 h2{
+	font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000;
+}
+.feature0 .sign{
+	float: left;
+	padding: 0 25px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.feature0 .sign .left{
+	float: left;
+	width: 20%;
+	height: auto;
+	padding-top: 10px;
+}
+.feature0 .sign .right{
+	float: right;
+	width: 70%;
+}
+.feature0 .sign .right h3{
+	width: 100%;
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 20px;
+}
+.feature0 .sign .right p{
+	font-size: 15px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.footer{
+	padding: 75px 0;
+	background-color: #fff;
+	line-height: 1.5;
+}
+.footer0{
+    padding: 0 25px;
+}
+.footer0 p{
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 20px;
+}

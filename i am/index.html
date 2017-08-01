@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页之fullPage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/jquery.fullPage.css">-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                'navigation': true,
+                continuousVertical: true,
+                afterLoad: function(anchorLink, index){
+                    if(index == 2){
+                        $('.section2').find('img').delay(500).animate({
+                            left: '0'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == 3){
+                        $('.section3').find('img').delay(500).animate({
+                            bottom: '0'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == 4){
+                        $('.section4').find('img').fadeIn(2000);
+                    }
+                },
+                onLeave: function(index, direction){
+                    if(index == '2'){
+                        $('.section2').find('img').delay(500).animate({
+                            left: '-120%'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '3'){
+                        $('.section3').find('img').delay(500).animate({
+                            bottom: '-120%'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '4'){
+                        $('.section4').find('img').fadeOut(2000);
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div id="dowebok">
+    <div class="section section1">
+        <h1>漂亮的不像实力派</h1>
+        <a href="" class="text">碳黑色 | 酒红色 | 细红线特别版</a>
+        <img src="img/3.png" alt="" class="tu3">
+        <img src="img/4.png" alt="" class="tu4">
+        <img src="img/5.png" alt="" class="tu5">
+    </div>
+    <div class="section section2">
+        <h1>超低功耗，超级双摄，超长续航</h1>
+        <a href="" class="text">进一步了解smartian OS 3.7/3.7 ></a>
+        <img src="img/1.png" alt="" class="tu1">
+        <div class="big">
+            <h6>Big Bang 2.0</h6>
+            <p>大爆炸2.0</p>
+        </div>
+        <div class="idea">
+            <h6>Idea Pills 1.0</h6>
+            <p>闪念胶囊 1.0</p>
+        </div>
+        <div class="one">
+            <h6>One Step 1.5</h6>
+            <p>一步 1.5</p>
+        </div>
+
+    </div>
+    <div class="section section3">
+        <h1>圆滑当道时代的锐丽异类</h1>
+        <a href="" class="text">进一步了解坚果Pro的设计 ></a>
+        <img src="img/6.png" alt="" class="tu6">
+        <img src="img/7.png" alt="" class="tu7">
+    </div>
+    <div class="section section4">
+        <h1>脱胎换骨的技术团队，脱胎换骨的技术表现</h1>
+        <a href="" class="text">进一步了解坚果Pro的硬实力 ></a>
+        <img src="img/8.png" alt="" class="tu8">
+    </div>
+
+</div>
+</body>
+</html>

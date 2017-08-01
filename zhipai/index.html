@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扑克</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<style>
+    *{
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    .table{
+        width:700px;
+        height:630px;
+        margin:0 auto;
+        position:relative;
+        background:url("img/1.jpg") center center no-repeat;
+        background-size:cover;
+    }
+    .poker{
+        width:90px;
+        height:120px;
+        background-size:90px 120px;
+        background-position: center center;
+        background-repeat:no-repeat;
+        border:3px solid rgba(0,0,0,0);
+        position:absolute;
+        top:10px;
+        left:300px;
+        box-sizing:border-box;
+        opacity:0;
+    }
+    .active{
+        /*border-color: #FAB20F;*/
+        box-shadow: 0 0 3px 3px #FAB20F;
+    }
+    [class^=move]{
+        width:80px;
+        height:50px;
+        border-radius:5px;
+        background:#FAB20F;
+        opacity:.9;
+        position:absolute;
+        left:306px;
+        text-align:center;
+        line-height:50px;
+        color:#fff;
+    }
+    .moveL{
+        top:510px;
+    }
+    .moveR{
+        top:570px;
+    }
+</style>
+<body>
+    <div class="table">
+        <div class="moveL"><i class="iconfont zuo"></i></div>
+        <div class="moveR"><i class="iconfont you"></i></div>
+    </div>
+</body>
+</html>

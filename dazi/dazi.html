@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打字游戏</title>
+    <script src="function.js"></script>
+    <script src="da.js"></script>
+</head>
+<style>
+    *{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        width: 100%;
+        height: 600px;
+        background: url('img/1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .life{
+        width: 200px;
+        height: 100px;
+        line-height: 40px;
+        border-radius: 3px;
+        background: #0D299A;
+        background-size: cover;
+        text-align: left;
+        font-weight: 600;
+        color: greenyellow;    
+        float: left;   
+        margin: 10px;
+    }
+    .life>div{
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .yun{
+        width: 800px;
+        height: 100px;   
+        border-radius: 10px;     
+        background: url('img/d.jpg') center center no-repeat;
+        background-size: cover;        
+        float: left;
+        position: absolute;
+        top: 10px;
+        left: 220px;
+        z-index: 10;
+        animation:yun 2s ease-in-out infinite alternate; 
+        margin-left: 40px;
+    }
+    @keyframes yun{
+        from{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(200px);
+        }
+    }
+    .span1{
+        width: 100px;
+        height: 16px;
+        border-radius: 3px;
+        background: #7EBA0D;
+        display: block;
+        float: right;
+        margin-top: 12px;
+        margin-right: 18px;
+    }
+    .span1 .t1{
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 3px;
+        background: #C8361C;
+    }
+    .span2{
+        color: #fff;
+        font-size: 24px;
+        margin-left: 5px;
+    }
+</style>
+<body>
+    <div class="life">
+        <div class="score">生命指数<span class="span1"><span class="t1"></span></span></div>
+        <div class="le">当前分数 <span class="span2">0</span></div>
+    </div>
+    <!-- <div class="yun"></div> -->
+</body>
+
+<script>
+    let game=new Game();
+    game.start();
+</script>
+</html>
+    <!--
+   属性
+    0~z
+    个数
+    速度
+   方法
+    产生
+    掉
+    消除
+    next
+    重新开始-->

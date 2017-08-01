@@ -1,0 +1,569 @@
+/*
+* @Author: Administrator
+* @Date:   2017-03-29 14:33:00
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-11 14:04:10
+*/
+*{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.gao{
+	width: 100%;
+	height: 40px;
+	background: #444444;
+	font-size: 12px;
+	color: #A8A8AA;
+}
+.gao .gao1{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: right;
+	line-height: 40px;
+}
+.gao .gao2{
+	display: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	text-align: right;
+	line-height: 40px;
+}
+.wheel{
+	width: 100%;
+	height: 540px;
+	background: #CC3341;
+	position: relative;
+	overflow: hidden;
+}
+nav{
+	width: 100%;
+	height: 44px;
+	background: rgba(0, 0, 0, 0.8);
+}
+nav .con1 a{
+	display: inline-block;
+	color: white;
+	font-size: 12px;
+}
+nav .con1 a:hover{
+	color: #444444;
+}
+nav .con1{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 44px;
+	text-align: justify;
+}
+nav .con1:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+nav .con2{
+	display: none;
+}
+.wheel .tu{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/iphone7_large.png);
+	background-size: contain;
+	background-position: center 160px;
+	background-repeat: no-repeat;
+}
+.wheel .wen{
+	width: 100%;
+	height: 152px;
+	position: absolute;
+	top: 80px;
+	text-align: center;
+	color: #fff;
+}
+.wheel  .wen .zi{
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+	font-size: 12px;
+	line-height: 26px;
+	text-align: center;
+	border: 1px solid #fff;	
+}
+.wheel .wen h2{
+	margin-top: 30px;
+	margin-bottom: 20px;	
+}
+.wheel .left,.wheel .right{
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.wheel .left{
+	left: 0;
+}
+.wheel .left>div,.wheel .right>div{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 64px;
+	background: rgba(180,180,180,0.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 30px;
+	transition: all 1s ease;
+	opacity: 0;
+}
+.wheel .left>div{
+	left: 20px;
+}
+.wheel .right>div{
+	right: 20px;
+}
+.wheel .left:hover>div{
+    opacity: 1;
+}
+.wheel .right:hover>div{
+    opacity: 1;
+}
+.t0{
+	width: 100%;
+	height: 200px;
+}
+.t0 .t1{
+	width: 25%;
+	height: 200px;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background-image: url(../img/w_large.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.t0 .t2{
+	width: 25%;
+	height: 200px;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background-image: url(../img/i_large.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.t0 .t3{
+	width: 25%;
+	height: 200px;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background-image: url(../img/a_large.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.t0 .t4{
+	width: 25%;
+	height: 200px;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background-image: url(../img/s_large.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.last{
+	width: 100%;
+	height: 421px;
+	background: #F2F2F2;
+}
+.last0{
+	width: 980px;
+	height: 401px;
+	margin: 0 auto;
+	
+}
+.last1{
+	width: 100%;
+	height: 21px;
+	margin: 0 auto;
+	padding-top: 17px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #D6D6D6;
+	font-size: 8px;
+	color: #888888;
+}
+.last2{
+	width: 100%;
+	height: 225px;
+	padding-top: 20px;
+}
+.last2 h6{
+	width: 100%;
+	height: 15px;
+	margin-bottom: 6px;
+}
+.last2 ul,li{
+	width: 100%;
+	height: 15px;
+	margin-bottom: 6px;
+}
+.last2 a{
+	color: #555;
+}
+.last2 a:hover{
+	border-bottom: 1px solid #555;
+}
+.gou1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	font-size: 9px;
+}
+.gou2{
+    width: 20%;
+    height: 100%;
+	float: left;
+	font-size: 9px;
+}
+.gou3{
+    width: 20%;
+    height: 100%;
+	float: left;
+	font-size: 9px;
+}
+.gou3 .gou31{
+	width: 100%;
+	height: 57px;
+}
+.gou3 .gou32{
+    width: 100%;
+    height: 57px;
+    padding-top: 24px;
+}
+.gou4{
+	width: 20%;
+	height: 100%;
+	float: left;
+	font-size: 9px;
+}
+.gou4 .gou41{
+	width: 100%;
+	height: 78px;
+}
+.gou4 .gou42{
+	width: 100%;
+	height: 99px;
+	padding-top: 24px;
+}
+.gou5{
+	width: 20%;
+	height: 100%;
+	float: left;
+	font-size: 9px;
+}
+.last3{
+	width: 100%;
+	height: 17px;
+	padding-top: 34px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #D6D6D6;
+	margin-bottom: 7px;
+	font-size: 8px;
+	color: #888888;
+}
+.last3 a{
+	color: #0070C9;
+}
+.last3 a:hover{
+    text-decoration: underline;
+}
+.last4{
+	width: 100%;
+	height: 23px;
+}
+.last4 .copy{
+	width: auto;
+	height: 17px;
+	line-height: 17px;
+	margin-right: 30px;
+	margin-top: 3px;
+	float: left;
+	font-size: 8px;
+	color: #888888;
+}
+.last4 .ce {
+	width: auto;
+	height: 17px;
+	line-height: 17px;
+	margin-top: 3px;
+	margin-right: 30px;
+	float: left;
+}
+.last4 .ce a{
+	width: auto;
+	display: inline-block;
+	padding-right: 12px;
+	border-right: 1px solid #555;
+	margin-right: 10px;
+	color: #555;
+	font-size: 8px;
+}
+.last4 .ce a:hover{
+	text-decoration: underline;
+}
+.last4 .si{
+	width: auto;
+	height: 17px;
+	margin-bottom: 3px;
+	line-height: 17px;
+	float: right;
+}
+.last4 .si a{
+	color: #555;
+	font-size: 8px;
+}
+.last4 .si a:hover{
+	text-decoration: underline;
+}
+.jing{
+	width: 980px;
+	height: 17px;
+	line-height: 17px;
+	font-size: 8px;
+	color: #888;
+}
+.last5,.last6,.last7,.last8{
+	display: none;
+}
+@media screen and (max-width: 1000px){
+	.gao .gao1{
+		display: none;
+	}
+	.gao .gao2{
+		display: block;
+	}
+	nav .con1{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	nav .con2{
+		display: none;
+	}
+	.wheel{
+		width: 100%;
+		height: 500px;
+		overflow: hidden;
+	}
+	.wheel .tu{
+	    background-image: url(../img/iphone7_medium.png);
+    }
+    .t0{
+	    width: 100%;
+	    height: 400px;
+    }
+    .t0 .t1{
+        width: 50%;
+        background-image: url(../img/w_medium.jpg);
+        background-size: cover;
+        background-position: center center;
+	    background-repeat: no-repeat;
+    }
+    .t0 .t2{
+    	width: 50%;
+    	
+        background-image: url(../img/i_medium.jpg);
+        background-size: cover;
+        background-position: center center;
+	    background-repeat: no-repeat;
+    }
+    .t0 .t3{
+    	width: 50%;
+    	
+        background-image: url(../img/a_medium.jpg);
+        background-size: cover;
+        background-position: center center;
+	    background-repeat: no-repeat;
+    }
+    .t0 .t4{
+    	width: 50%;
+        background-image: url(../img/s_medium.jpg);
+        background-size: cover;
+        background-position: center center;
+	    background-repeat: no-repeat;
+    }
+    .last{
+    	width: 100%;
+    }
+    .last0{
+    	width: 90%;
+    }
+    .jing{
+    	width: 90%;
+    }
+}
+@media screen and (max-width: 770px){
+    nav .con1{
+		display: none;
+	}
+	nav .con2{
+		width: 100%;
+		display: block;
+		padding: 0 20px;
+		text-align: justify;
+		line-height: 44px;
+		box-sizing: border-box;
+	}
+	nav .con2 a{
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+	}
+	nav .con2:after{
+		content: "";
+		width: 100%;
+		display: inline-block;
+	}
+	.wheel{
+		width: 100%;
+		height: 420px;
+		overflow: hidden;
+	}
+	.wheel .tu{
+	background-image: url(../img/iphone7_small.png);
+    }
+    .t0{
+	    width: 100%;
+	    height: 800px;
+    }
+    .t0 .t1{
+        width: 100%;
+        background-image: url(../img/w_small.jpg);
+        background-size: cover;
+    }
+    .t0 .t2{
+    	width: 100%;
+        background-image: url(../img/i_small.jpg);
+        background-size: cover;
+    }
+    .t0 .t3{
+    	width: 100%;
+        background-image: url(../img/a_small.jpg);
+        background-size: cover;
+    }
+    .t0 .t4{
+    	width: 100%;
+        background-image: url(../img/s_small.jpg);
+        background-size: cover;
+    }
+    .last{
+    	width: 100%;
+    	height: 488px;
+    }
+    .last0{
+    	width: 95%;
+    	margin: 0 auto;
+    }
+    .last2,.last3,.last4,.jing{
+    	display: none;
+    }
+    .last5,.last6,.last7,.last8{
+	    display: block;
+    }
+    .last5{
+    	width: 100%;
+    	margin: 0 auto;
+    	padding-top: 20px;
+    }
+    .last5>div{
+    	display: block;
+    	width: 100%;
+    	height: 18px;
+    	padding: 10px 0;
+    	border-bottom: 1px solid #d6d6d6;
+    	line-height: 18px;
+    	font-size: 10px;
+    }
+    .last5>div a{
+    	color: #333;
+    }
+    .last5>div span{
+    	float: right;
+    	font-size: 14px;
+    }
+    .last6{
+    	display: block;
+    	margin-top: 22px;
+    	
+    	padding-bottom: 6px;
+    	height: 17px;
+    	line-height: 17px;
+    	font-size: 8px;
+    	color: #888888;
+    }
+    .last6 a{
+    	color: #0070C9;
+    }
+    .last7 .si0{
+        display: block;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: 17px;
+        line-height: 17px;
+    }
+    .last7 .si0 a{
+    	color: #555;
+    	font-size: 8px;
+    }
+    .last7 .copy0{
+    	display: block;
+    	margin-top: 3px;
+    	height: 17px;
+    	line-height: 17px;
+    	font-size: 8px;
+    	color: #888;
+    }
+    .last7 .ce0{
+    	display: block;
+    	margin-top: 3px;
+    	height: 20px;
+    }
+    .last7 .ce0 a{
+    	margin-right: 10px;
+    	padding-right: 12px;
+    	border-right: 1px solid #555;
+        color: #555;
+        font-size: 8px;
+    }
+    .last7 .ce0 a:hover{
+    	text-decoration: underline;
+    }
+    .last8{
+    	height: 17px;
+    	line-height: 17px;
+    	font-size: 8px;
+    	color: #888;
+    }
+}

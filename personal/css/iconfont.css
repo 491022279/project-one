@@ -1,0 +1,41 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../iconfont/iconfont.eot?t=1491909813066'); /* IE9*/
+  src: url('../iconfont/iconfont.eot?t=1491909813066#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/iconfont.woff?t=1491909813066') format('woff'), /* chrome, firefox */
+  url('../iconfont/iconfont.ttf?t=1491909813066') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/iconfont.svg?t=1491909813066#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.present:before { content: "\e646"; font-size: 40px;
+  color: #E32929;}
+
+.github:before { content: "\e66f"; color: #ccc;
+  font-size: 20px;}
+
+.umbrella:before { content: "\e680"; font-size: 40px;
+  color: #E32929;}
+
+.crop:before { content: "\e6af"; font-size: 40px;
+  color: #E32929;}
+
+.speedometer:before { content: "\e76f"; font-size: 40px;
+  color: #E32929;}
+
+.twitter:before { content: "\e68a"; color: #ccc;
+  font-size: 20px;}
+
+.eye:before { content: "\e60d"; font-size: 40px;
+  color: #E32929;}
+
+.Heart:before { content: "\e6ab"; font-size: 40px;
+  color: #E32929;}
+
